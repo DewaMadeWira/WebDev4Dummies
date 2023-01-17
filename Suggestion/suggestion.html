@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="../Assets/computer.png" />
+    <link rel="stylesheet" href="suggestionstyle.css" />
+    <title>Web4Dum | | Suggestion</title>
+  </head>
+  <body>
+    <nav>
+      <h4 class="logo">WebDev4Dummies</h4>
+      <!-- <div class="nav-hamburger"> -->
+      <!-- <h1>Hamburger</h1> -->
+
+      <i class="fa fa-bars nav-hamburger hamBtn"></i>
+      <ul class="dropdown">
+        <li class="dropdown-item" onclick="location.href='../Home/index.html'">
+          HOME
+        </li>
+        <li class="dropdown-item category">CATEGORIES</li>
+        <ul class="category-ul hidden-cat">
+          <a href="../Animation/animation.html"></a>
+          <li
+            class="category-item"
+            onclick="location.href='../Animation/animation.html'"
+          >
+            ANIMATIONS
+          </li>
+          <li
+            class="category-item"
+            onclick="location.href='../Layout/layout.html'"
+          >
+            LAYOUT
+          </li>
+          <li class="category-item"  onclick="location.href='../404/404.html'">APPEARANCE</li>
+          <li class="category-item"  onclick="location.href='../404/404.html'">ASSETS</li>
+        </ul>
+        <li class="dropdown-item" onclick="location.href='#about_section'">
+          ABOUT
+        </li>
+      </ul>
+
+      <div class="nav-links">
+        <div class="nav-group">
+          <input
+            class="nav-btn"
+            type="radio"
+            id="home"
+            name="navbar"
+            value="home"
+          />
+          <label
+            class="nav-item"
+            for="home"
+            onclick="location.href='../Home/index.html'"
+            >HOME</label
+          >
+        </div>
+        <div class="nav-group">
+          <input
+            class="nav-btn"
+            type="radio"
+            id="categories"
+            name="navbar"
+            value="categories"
+          />
+          <label class="nav-item category-btn" for="categories"
+            >CATEGORIES</label
+          >
+          <ul class="category-nav">
+            <li
+              class="category-item"
+              onclick="location.href='../Animation/animation.html'"
+            >
+              ANIMATIONS
+            </li>
+            <li
+              class="category-item"
+              onclick="location.href='../Layout/layout.html'"
+            >
+              LAYOUT
+            </li>
+            <li class="category-item"  onclick="location.href='../404/404.html'">APPEARANCE</li>
+            <li class="category-item"  onclick="location.href='../404/404.html'">ASSETS</li>
+          </ul>
+        </div>
+        <div class="nav-group">
+          <input
+            class="nav-btn"
+            type="radio"
+            id="about"
+            name="navbar"
+            value="about"
+          />
+
+          <label
+            class="nav-item"
+            for="about"
+            onclick="location.href='#about_section'"
+            >ABOUT</label
+          >
+        </div>
+      </div>
+    </nav>
+    <main>
+      <form
+        id="form-suggestion"
+        method="POST"
+        action="https://script.google.com/macros/s/AKfycbzZU-FIIGCoJ5Py_TbiWk1SOptr6dBCpPH638mI7Ff1TzbsTcccvphuhI7yHu43uJJQ/exec"
+        class="form-container"
+      >
+        <h2 class="hidden">Suggestion</h2>
+        <h3 class="hidden">What do you prefer to be called ?</h3>
+        <input
+          type="text"
+          name="name"
+          id=""
+          class="text-field hidden"
+          placeholder="Your Name"
+        />
+        <h3 class="hidden">What are your thoughts on this website ?</h3>
+        <textarea
+          class="text-field text-area hidden"
+          name="thougts"
+          id=""
+          placeholder="This website has ..."
+        ></textarea>
+        <h3 class="hidden">Are there any suggestion for this website ?</h3>
+        <textarea
+          class="text-field text-area hidden"
+          name="suggestion"
+          id=""
+          placeholder="Things that can be improved ..."
+        ></textarea>
+        <h2 class="hidden" style="margin-top: 4rem">Idea</h2>
+        <h3 class="hidden">Do you have an idea for this website ?</h3>
+        <input
+          type="text"
+          name="idea"
+          id=""
+          class="text-field hidden"
+          placeholder="Button that change color when hovered. (Leave it empty if there is none.)  "
+        />
+        <h3 class="hidden">Code for Idea</h3>
+        <textarea
+          class="text-field text-area hidden"
+          name="code"
+          id=""
+          placeholder="Codepen Links or other that similar "
+        ></textarea>
+        <div class="btn-container">
+          <button
+            class="hidden"
+            style="background-color: #c21858; margin-right: 2rem"
+            onclick="location.href='../Home/index.html'"
+          >
+            Cancel
+          </button>
+          <button class="btn-show hidden" type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <h4 class="footer-title">Web Development for Dummies</h4>
+      <p class="footer-text">Where you can find your WebDev needs.</p>
+      <p class="footer-text">Made By : Dewa</p>
+      <a href="https://github.com/dwmd12" target="_blank">
+        <p class="footer-logo">GITHUB</p>
+      </a>
+    </footer>
+  </body>
+</html>

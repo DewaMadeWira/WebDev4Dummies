@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="./Assets/computer.png" />
+    <link rel="stylesheet" href="homestyle.css" />
+    <title>Web4Dum | | Home</title>
+  </head>
+  <body>
+    <nav>
+      <h4 class="logo">WebDev4Dummies</h4>
+      <!-- <div class="nav-hamburger"> -->
+      <!-- <h1>Hamburger</h1> -->
+
+      <i class="fa fa-bars nav-hamburger hamBtn"></i>
+      <ul class="dropdown">
+        <li class="dropdown-item" onclick="location.href='./index.html'">
+          HOME
+        </li>
+        <li class="dropdown-item category">CATEGORIES</li>
+        <ul class="category-ul hidden-cat">
+          <a href="../Animation/animation.html"></a>
+          <li
+            class="category-item"
+            onclick="location.href='../Animation/animation.html'"
+          >
+            ANIMATIONS
+          </li>
+          <li
+            class="category-item"
+            onclick="location.href='../Layout/layout.html'"
+          >
+            LAYOUT
+          </li>
+          <li class="category-item" onclick="location.href='../404/404.html'">
+            APPEARANCE
+          </li>
+          <li class="category-item" onclick="location.href='../404/404.html'">
+            ASSETS
+          </li>
+        </ul>
+        <li class="dropdown-item" onclick="location.href='#about_section'">
+          ABOUT
+        </li>
+      </ul>
+
+      <div class="nav-links">
+        <div class="nav-group">
+          <input
+            class="nav-btn"
+            type="radio"
+            id="home"
+            name="navbar"
+            value="home"
+          />
+          <label
+            class="nav-item"
+            for="home"
+            onclick="location.href='./index.html'"
+            >HOME</label
+          >
+        </div>
+        <div class="nav-group">
+          <input
+            class="nav-btn"
+            type="radio"
+            id="categories"
+            name="navbar"
+            value="categories"
+          />
+          <label class="nav-item category-btn" for="categories"
+            >CATEGORIES</label
+          >
+          <ul class="category-nav">
+            <li
+              class="category-item"
+              onclick="location.href='../Animation/animation.html'"
+            >
+              ANIMATIONS
+            </li>
+            <li
+              class="category-item"
+              onclick="location.href='../Layout/layout.html'"
+            >
+              LAYOUT
+            </li>
+            <li class="category-item" onclick="location.href='../404/404.html'">
+              APPEARANCE
+            </li>
+            <li class="category-item" onclick="location.href='../404/404.html'">
+              ASSETS
+            </li>
+          </ul>
+        </div>
+        <div class="nav-group">
+          <input
+            class="nav-btn"
+            type="radio"
+            id="about"
+            name="navbar"
+            value="about"
+          />
+
+          <label
+            class="nav-item"
+            for="about"
+            onclick="location.href='#about_section'"
+            >ABOUT</label
+          >
+        </div>
+      </div>
+    </nav>
+    <main class="main">
+      <h1 class="hidden main-title">Website Development</h1>
+      <h2 class="main-title hidden">For Dummies</h2>
+      <div class="main-text-group">
+        <h3 class="main-text hidden">A Collection of things you might need</h3>
+        <h3 class="main-text hidden">
+          For Website Development <span class="hidden dot-animate">.</span>
+        </h3>
+      </div>
+      <div class="main-btn-group">
+        <button
+          class="btn-show hidden"
+          onclick="location.href='#animation_section'"
+        >
+          Showcase
+        </button>
+        <!-- <a href="#about_page"><button class="btn-show hidden">Showcase</button></a> -->
+
+        <button class="btn-start hidden">Get Started</button>
+      </div>
+
+      <!-- <div class="bg-curve"></div> -->
+    </main>
+    <div class="spacer layer1"></div>
+    <!-- Animation Section -->
+    <section id="animation_section">
+      <h1 class="showcase-title hidden-vertical">Animations</h1>
+      <div class="showcase-item">
+        <h3 class="hidden-vertical">Hover Animations</h3>
+        <div class="showcase-btn">
+          <button class="btn-hover-up hidden-vertical">Hover Up</button>
+          <button class="btn-hover-scale hidden-vertical">Hover Scale</button>
+          <button class="btn-hover-color hidden-vertical">Hover Color</button>
+        </div>
+      </div>
+      <div class="showcase-item">
+        <h3 class="hidden-vertical">Click Animations</h3>
+        <div class="showcase-btn">
+          <button class="btn-click-opacity hidden-vertical">Opacity</button>
+          <button class="btn-click-down hidden-vertical">Translate Down</button>
+          <button class="btn-click-color hidden-vertical">Active Color</button>
+        </div>
+      </div>
+    </section>
+    <div class="spacer layer2"></div>
+
+    <!-- Layout Section -->
+    <section class="section-bg section-layout">
+      <h1 class="showcase-title hidden-vertical">Layout</h1>
+      <div class="showcase-item grid-container">
+        <h3 class="hidden-vertical">Mosaic Grid</h3>
+        <div class="grid">
+          <button class="card card-tall hidden-vertical">1</button>
+          <button class="card hidden-vertical">2</button>
+          <button class="card hidden-vertical">3</button>
+          <button class="card hidden-vertical">4</button>
+          <button class="card hidden-vertical">5</button>
+          <button class="card hidden-vertical">6</button>
+          <button class="card hidden-vertical">7</button>
+          <button class="card hidden-vertical">8</button>
+          <button class="card card-wide hidden-vertical">9</button>
+
+          <!-- <button class="card hidden-vertical">10</button> -->
+        </div>
+      </div>
+      <div class="showcase-item">
+        <h3 class="hidden-vertical">Responsive Flex</h3>
+        <div class="showcase-btn">
+          <button class="btn-showcase-item hidden-vertical">1</button>
+          <button class="btn-showcase-item hidden-vertical">2</button>
+          <button class="btn-showcase-item hidden-vertical">3</button>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <!-- <div class="spacer layer3"></div> -->
+    <div id="about_section">
+      <section class="section-bg section-about">
+        <h1 class="hidden">About</h1>
+        <p class="about-p hidden">
+          This website aims to provide the essential materials and tools to
+          build a website. From a collection of Animation, to useful websites
+          that will speed up development process and made your websites more
+          attractive.
+        </p>
+        <p class="about-p hidden">
+          This website is currently on its early stage and I would appreciate
+          your ideas, suggestion, and ratings ! You can write your suggestion
+          and ideas <a href="../Suggestion/suggestion.html"> here.</a> You can
+          also rate this website by clicking the respective score below.
+        </p>
+        <form
+          id="form-rating"
+          action="https://script.google.com/macros/s/AKfycbxzFiqYJ7xu4eW__k8TN5_ocvHGvGcXR1WUpQe0k2hmZQpRtTpYIWwwf-x18wO3ZZuyMg/exec"
+          method="POST"
+          class="rating-group hidden"
+        >
+          <div class="rating-item">
+            <div class="rating">
+              <input
+                type="radio"
+                id="veryDissatisfied"
+                name="ratings"
+                value="Very Dissatisfied"
+                style="color: red"
+              />
+              <label for="veryDissatisfied">Very Dissatisfied</label>
+            </div>
+            <div class="rating">
+              <input
+                type="radio"
+                id="dissatisfied"
+                name="ratings"
+                value="Dissatisfied"
+              />
+              <label for="dissatisfied">Dissatisfied</label>
+            </div>
+            <div class="rating">
+              <input type="radio" id="neutral" name="ratings" value="Neutral" />
+              <label for="neutral">Neutral</label>
+            </div>
+            <div class="rating">
+              <input
+                type="radio"
+                id="satisfied"
+                name="ratings"
+                value="Satisfied"
+              />
+              <label for="satisfied">Satisfied</label>
+            </div>
+            <div class="rating">
+              <input
+                type="radio"
+                id="verySatisfied"
+                name="ratings"
+                value="Very Satisfied"
+              />
+              <label for="verySatisfied">Very Satisfied</label>
+            </div>
+          </div>
+          <div class="btn-rating">
+            <button type="submit" class="btn-show hidden">Submit</button>
+          </div>
+        </form>
+      </section>
+    </div>
+    <footer>
+      <h4 class="footer-title">Web Development for Dummies</h4>
+      <p class="footer-text">Where you can find your WebDev needs.</p>
+      <p class="footer-text">Made By : Dewa</p>
+      <a href="https://github.com/dwmd12" target="_blank">
+        <p class="footer-logo">GITHUB</p>
+      </a>
+    </footer>
+  </body>
+</html>

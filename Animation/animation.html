@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web4Dum | | Animation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="../Assets/computer.png" />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="animationstyle.css" />
+  </head>
+  <body>
+    <nav>
+      <h4 class="logo">WebDev4Dummies</h4>
+      <!-- <div class="nav-hamburger"> -->
+      <!-- <h1>Hamburger</h1> -->
+
+      <i class="fa fa-bars nav-hamburger hamBtn"></i>
+      <ul class="dropdown">
+        <li class="dropdown-item" onclick="location.href='../Home/index.html'">
+          HOME
+        </li>
+        <li class="dropdown-item category">CATEGORIES</li>
+        <ul class="category-ul hidden-cat">
+          <a href="../Animation/animation.html"></a>
+          <li
+            class="category-item"
+            onclick="location.href='../Animation/animation.html'"
+          >
+            ANIMATIONS
+          </li>
+          <li
+            class="category-item"
+            onclick="location.href='../Layout/layout.html'"
+          >
+            LAYOUT
+          </li>
+          <li class="category-item" onclick="location.href='../404/404.html'">
+            APPEARANCE
+          </li>
+          <li class="category-item" onclick="location.href='../404/404.html'">
+            ASSETS
+          </li>
+        </ul>
+        <li
+          class="dropdown-item"
+          onclick="location.href='../Home/index.html#about_section'"
+        >
+          ABOUT
+        </li>
+      </ul>
+
+      <div class="nav-links">
+        <div class="nav-group">
+          <input
+            class="nav-btn"
+            type="radio"
+            id="home"
+            name="navbar"
+            value="home"
+          />
+          <label
+            class="nav-item"
+            for="home"
+            onclick="location.href='../Home/index.html'"
+            >HOME</label
+          >
+        </div>
+        <div class="nav-group">
+          <input
+            class="nav-btn"
+            type="radio"
+            id="categories"
+            name="navbar"
+            value="categories"
+          />
+          <label class="nav-item category-btn" for="categories"
+            >CATEGORIES</label
+          >
+          <ul class="category-nav">
+            <li
+              class="category-item"
+              onclick="location.href='../Animation/animation.html'"
+            >
+              ANIMATIONS
+            </li>
+            <li
+              class="category-item"
+              onclick="location.href='../Layout/layout.html'"
+            >
+              LAYOUT
+            </li>
+            <li class="category-item" onclick="location.href='../404/404.html'">
+              APPEARANCE
+            </li>
+            <li class="category-item" onclick="location.href='../404/404.html'">
+              ASSETS
+            </li>
+          </ul>
+        </div>
+        <div class="nav-group">
+          <input
+            class="nav-btn"
+            type="radio"
+            id="about"
+            name="navbar"
+            value="about"
+          />
+
+          <label
+            class="nav-item"
+            for="about"
+            onclick="location.href='../Home/index.html#about_section'"
+            >ABOUT</label
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- Side Nav -->
+    <div class="side-nav">
+      <h3 class="side-title">Animation</h3>
+      <div class="side-group">
+        <input
+          class="info-btn"
+          type="radio"
+          id="hover"
+          name="side-nav"
+          value="hover"
+          checked
+        />
+        <label
+          class="side-item side-item-active"
+          for="hover"
+          onclick="location.href='#hover_section'"
+          >Hover Animations</label
+        >
+      </div>
+      <div class="side-group">
+        <input
+          class="info-btn"
+          type="radio"
+          id="animations"
+          name="side-nav"
+          value="animations"
+        />
+        <label
+          class="side-item"
+          for="animations"
+          onclick="location.href='#click_section'"
+          >Click Animations</label
+        >
+      </div>
+    </div>
+    <!-- Section ne -->
+    <section>
+      <h2 id="hover_section" class="hidden-vertical">Animation</h2>
+      <div class="grid">
+        <!-- Card One -->
+        <div class="card hidden-vertical">
+          <h6 class="card-title">Hover up</h6>
+          <div class="card-info">
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="preview"
+                name="fav_language"
+                value="preview"
+                checked
+              />
+              <label class="info-item" for="preview">Preview</label><br />
+            </div>
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="html"
+                name="fav_language"
+                value="HTML"
+              />
+              <label class="info-item" for="html">HTML</label><br />
+            </div>
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="css"
+                name="fav_language"
+                value="CSS"
+              />
+              <label class="info-item" for="css">CSS</label><br />
+            </div>
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="javascript"
+                name="fav_language"
+                value="JavaScript"
+              />
+              <label class="info-item" for="javascript">JavaScript</label>
+            </div>
+          </div>
+          <div class="card-code">
+            <button class="code btn-hover-up">Hover Up</button>
+            <code class="code"
+              >&lt;button class=&quot;code btn-hover-up&quot;&gt;Hover
+              Up&lt;/button&gt;</code
+            >
+            <div class="code">
+              <p>
+                <code>.btn-hover-up{ background: var(--blue); } </code>
+              </p>
+              <p style="margin-top: 1rem">
+                <code>
+                  .btn-hover-up:hover{ transform: translateY(-20%); }
+                </code>
+              </p>
+            </div>
+            <p class="code">No Javascript !</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card hidden-vertical">
+          <h6 class="card-title">Hover Scale</h6>
+          <div class="card-info">
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="preview2"
+                name="fav_language2"
+                value="preview2"
+                checked
+              />
+              <label class="info-item" for="preview2">Preview</label><br />
+            </div>
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="html2"
+                name="fav_language2"
+                value="HTML"
+              />
+              <label class="info-item" for="html2">HTML</label><br />
+            </div>
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="css2"
+                name="fav_language2"
+                value="CSS"
+              />
+              <label class="info-item" for="css2">CSS</label><br />
+            </div>
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="javascript2"
+                name="fav_language2"
+                value="JavaScript"
+              />
+              <label class="info-item" for="javascript2">JavaScript</label>
+            </div>
+          </div>
+          <div class="card-code">
+            <button class="code btn-hover-scale hidden-vertical">
+              Hover Scale
+            </button>
+            <p class="code">
+              <code>
+                &lt;button class=&quot;code btn-hover-scale
+                hidden-vertical&quot;&gt; Hover Scale &lt;/button&gt;
+              </code>
+            </p>
+            <div class="code">
+              <p>
+                <code>
+                  .btn-hover-color{ background: var(--dark-purple); }
+                </code>
+              </p>
+              <p style="margin-top: 1.5rem">
+                <code>
+                  <code>
+                    .btn-hover-color:hover{ background: var(--green); transform:
+                    none; }
+                  </code>
+                </code>
+              </p>
+            </div>
+            <p class="code">No Javascript !</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card hidden-vertical">
+          <h6 class="card-title">Hover Color</h6>
+          <div class="card-info">
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="preview3"
+                name="fav_language3"
+                value="preview3"
+                checked
+              />
+              <label class="info-item" for="preview3">Preview</label><br />
+            </div>
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="html3"
+                name="fav_language3"
+                value="HTML"
+              />
+              <label class="info-item" for="html3">HTML</label><br />
+            </div>
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="css3"
+                name="fav_language3"
+                value="CSS"
+              />
+              <label class="info-item" for="css3">CSS</label><br />
+            </div>
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="javascript3"
+                name="fav_language3"
+                value="JavaScript"
+              />
+              <label class="info-item" for="javascript3">JavaScript</label>
+            </div>
+          </div>
+          <div class="card-code">
+            <button class="code btn-hover-color hidden-vertical">
+              Hover Color
+            </button>
+            <p class="code">
+              <code>
+                &lt;button class=&quot;code btn-hover-color
+                hidden-vertical&quot;&gt;&lt;/button&gt;
+              </code>
+            </p>
+            <div class="code">
+              <p>
+                <code>
+                  .btn-hover-scale{ background: var(--dark-green); }
+                </code>
+              </p>
+              <p style="margin-top: 1.5rem">
+                <code>
+                  <code>
+                    button:hover{ box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em
+                    1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em; transform:
+                    translateY(-3px) scale(1.1); }
+                  </code>
+                </code>
+              </p>
+            </div>
+            <p class="code">No Javascript !</p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="card hidden-vertical">
+          <h6 class="card-title">Hover Opacity</h6>
+          <div class="card-info">
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="preview4"
+                name="fav_language4"
+                value="preview4"
+                checked
+              />
+              <label class="info-item" for="preview4">Preview</label><br />
+            </div>
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="html4"
+                name="fav_language4"
+                value="HTML"
+              />
+              <label class="info-item" for="html4">HTML</label><br />
+            </div>
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="css4"
+                name="fav_language4"
+                value="CSS"
+              />
+              <label class="info-item" for="css4">CSS</label><br />
+            </div>
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="javascript4"
+                name="fav_language4"
+                value="JavaScript"
+              />
+              <label class="info-item" for="javascript4">JavaScript</label>
+            </div>
+          </div>
+          <div class="card-code">
+            <button class="code btn-hover-opacity hidden-vertical">
+              Hover Color
+            </button>
+            <p class="code">
+              <code>
+                &lt;button
+                class=&quot;btn-hover-opacity&quot;&gt;&lt;/button&gt;
+              </code>
+            </p>
+            <div class="code">
+              <p>
+                <code> .btn-hover-opacity{ background: var(--red); } </code>
+              </p>
+              <p style="margin-top: 1.5rem">
+                <code>
+                  <code>
+                    .btn-hover-opacity:hover{ opacity: 0; transform: none; }
+                  </code>
+                </code>
+              </p>
+            </div>
+            <p class="code">No Javascript !</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Two -->
+    <section style="margin-top: 6rem; padding-bottom: 10rem">
+      <h2 id="click_section" class="hidden-vertical">Click Animation</h2>
+      <div class="grid">
+        <!-- Card One -->
+        <div class="card hidden-vertical">
+          <h6 class="card-title">Opacity</h6>
+          <div class="card-info">
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="preview5"
+                name="fav_language5"
+                value="preview"
+                checked
+              />
+              <label class="info-item" for="preview5">Preview</label><br />
+            </div>
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="html5"
+                name="fav_language5"
+                value="HTML"
+              />
+              <label class="info-item" for="html5">HTML</label><br />
+            </div>
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="css5"
+                name="fav_language5"
+                value="CSS"
+              />
+              <label class="info-item" for="css5">CSS</label><br />
+            </div>
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="javascript5"
+                name="fav_language5"
+                value="JavaScript5"
+              />
+              <label class="info-item" for="javascript5">JavaScript</label>
+            </div>
+          </div>
+          <div class="card-code">
+            <button class="code btn-click-opacity hidden-vertical">
+              Opacity
+            </button>
+            <code class="code"
+              >&lt;button class=&quot;code
+              btn-click-opacity&quot;&gt;Opacity&lt;/button&gt;</code
+            >
+            <div class="code">
+              <p>
+                <code>.btn-click-opacity{ background: var(--red-dark); } </code>
+              </p>
+              <p style="margin-top: 1rem">
+                <code> .btn-click-opacity:focus-within{ opacity: 0; } </code>
+              </p>
+            </div>
+            <p class="code">No Javascript !</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card hidden-vertical">
+          <h6 class="card-title">Translate Down</h6>
+          <div class="card-info">
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="preview6"
+                name="fav_language6"
+                value="preview6"
+                checked
+              />
+              <label class="info-item" for="preview6">Preview</label><br />
+            </div>
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="html6"
+                name="fav_language6"
+                value="HTML"
+              />
+              <label class="info-item" for="html6">HTML</label><br />
+            </div>
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="css6"
+                name="fav_language6"
+                value="CSS"
+              />
+              <label class="info-item" for="css6">CSS</label><br />
+            </div>
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="javascript6"
+                name="fav_language6"
+                value="JavaScript"
+              />
+              <label class="info-item" for="javascript6">JavaScript</label>
+            </div>
+          </div>
+          <div class="card-code">
+            <button class="code btn-click-down hidden-vertical">
+              Translate Down
+            </button>
+            <p class="code">
+              <code>
+                &lt;button class=&quot;btn-click-down&quot;&gt; Translate Down
+                &lt;/button&gt;
+              </code>
+            </p>
+            <div class="code">
+              <p>
+                <code> .btn-click-down{ background: var(--light-blue); } </code>
+              </p>
+              <p style="margin-top: 1.5rem">
+                <code>
+                  <code>
+                    .btn-click-down:focus-within{ transform: translateY(30%); }
+                  </code>
+                </code>
+              </p>
+            </div>
+            <p class="code">No Javascript !</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card hidden-vertical">
+          <h6 class="card-title">Active Color</h6>
+          <div class="card-info">
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="preview7"
+                name="fav_language7"
+                value="preview3"
+                checked
+              />
+              <label class="info-item" for="preview7">Preview</label><br />
+            </div>
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="html7"
+                name="fav_language7"
+                value="HTML"
+              />
+              <label class="info-item" for="html7">HTML</label><br />
+            </div>
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="css7"
+                name="fav_language7"
+                value="CSS"
+              />
+              <label class="info-item" for="css7">CSS</label><br />
+            </div>
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="javascript7"
+                name="fav_language7"
+                value="JavaScript"
+              />
+              <label class="info-item" for="javascript7">JavaScript</label>
+            </div>
+          </div>
+          <div class="card-code">
+            <button class="code btn-click-color hidden-vertical">
+              Active Color
+            </button>
+            <p class="code">
+              <code>
+                &lt;button class=&quot;btn-click-down&quot;&gt; Active Color
+                &lt;/button&gt;
+              </code>
+            </p>
+            <div class="code">
+              <p>
+                <code>
+                  .btn-click-color{ background-color: var(--green); }
+                </code>
+              </p>
+              <p style="margin-top: 1.5rem">
+                <code>
+                  <code>
+                    .btn-click-color:focus{ background-color: var(--red); }
+                  </code>
+                </code>
+              </p>
+            </div>
+            <p class="code">No Javascript !</p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="card hidden-vertical">
+          <h6 class="card-title">Coming Soon..</h6>
+          <div class="card-info">
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="preview4"
+                name="fav_language4"
+                value="preview4"
+                checked
+              />
+              <label class="info-item" for="preview4">Preview</label><br />
+            </div>
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="html4"
+                name="fav_language4"
+                value="HTML"
+              />
+              <label class="info-item" for="html4">HTML</label><br />
+            </div>
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="css4"
+                name="fav_language4"
+                value="CSS"
+              />
+              <label class="info-item" for="css4">CSS</label><br />
+            </div>
+            <div class="inputGroup">
+              <input
+                class="info-btn"
+                type="radio"
+                id="javascript4"
+                name="fav_language4"
+                value="JavaScript"
+              />
+              <label class="info-item" for="javascript4">JavaScript</label>
+            </div>
+          </div>
+          <div class="card-code">
+            <button class="code btn-hover-opacity hidden-vertical">
+              Hover Color
+            </button>
+            <p class="code">
+              <code>
+                &lt;button
+                class=&quot;btn-hover-opacity&quot;&gt;&lt;/button&gt;
+              </code>
+            </p>
+            <div class="code">
+              <p>
+                <code> .btn-hover-opacity{ background: var(--red); } </code>
+              </p>
+              <p style="margin-top: 1.5rem">
+                <code>
+                  <code>
+                    .btn-hover-opacity:hover{ opacity: 0; transform: none; }
+                  </code>
+                </code>
+              </p>
+            </div>
+            <p class="code">No Javascript !</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section></section> -->
+    <footer>
+      <h4 class="footer-title">Web Development for Dummies</h4>
+      <p class="footer-text">Where you can find your WebDev needs.</p>
+      <p class="footer-text">Made By : Dewa</p>
+      <a href="https://github.com/dwmd12" target="_blank">
+        <p class="footer-logo">GITHUB</p>
+      </a>
+    </footer>
+  </body>
+</html>

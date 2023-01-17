@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script defer src="script.js"></script>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <link rel="icon" href="../Assets/computer.png" />
+      <link rel="stylesheet" href="404style.css" />
+      <title>Web4Dum | | Home</title>
+    </head>
+    <body>
+      <nav>
+        <h4 class="logo">WebDev4Dummies</h4>
+        <!-- <div class="nav-hamburger"> -->
+        <!-- <h1>Hamburger</h1> -->
+
+        <i class="fa fa-bars nav-hamburger hamBtn"></i>
+        <ul class="dropdown">
+          <li
+            class="dropdown-item"
+            onclick="location.href='../Home/index.html'"
+          >
+            HOME
+          </li>
+          <li class="dropdown-item category">CATEGORIES</li>
+          <ul class="category-ul hidden-cat">
+            <a href="../Animation/animation.html"></a>
+            <li
+              class="category-item"
+              onclick="location.href='../Animation/animation.html'"
+            >
+              ANIMATIONS
+            </li>
+            <li
+              class="category-item"
+              onclick="location.href='../Layout/layout.html'"
+            >
+              LAYOUT
+            </li>
+            <li class="category-item" onclick="location.href='../404/404.html'">
+              APPEARANCE
+            </li>
+            <li class="category-item" onclick="location.href='../404/404.html'">
+              ASSETS
+            </li>
+          </ul>
+          <li class="dropdown-item" onclick="location.href='#about_section'">
+            ABOUT
+          </li>
+        </ul>
+
+        <div class="nav-links">
+          <div class="nav-group">
+            <input
+              class="nav-btn"
+              type="radio"
+              id="home"
+              name="navbar"
+              value="home"
+            />
+            <label
+              class="nav-item"
+              for="home"
+              onclick="location.href='../Home/index.html'"
+              >HOME</label
+            >
+          </div>
+          <div class="nav-group">
+            <input
+              class="nav-btn"
+              type="radio"
+              id="categories"
+              name="navbar"
+              value="categories"
+            />
+            <label class="nav-item category-btn" for="categories"
+              >CATEGORIES</label
+            >
+            <ul class="category-nav">
+              <li
+                class="category-item"
+                onclick="location.href='../Animation/animation.html'"
+              >
+                ANIMATIONS
+              </li>
+              <li
+                class="category-item"
+                onclick="location.href='../Layout/layout.html'"
+              >
+                LAYOUT
+              </li>
+              <li
+                class="category-item"
+                onclick="location.href='../404/404.html'"
+              >
+                APPEARANCE
+              </li>
+              <li
+                class="category-item"
+                onclick="location.href='../404/404.html'"
+              >
+                ASSETS
+              </li>
+            </ul>
+          </div>
+          <div class="nav-group">
+            <input
+              class="nav-btn"
+              type="radio"
+              id="about"
+              name="navbar"
+              value="about"
+            />
+
+            <label
+              class="nav-item"
+              for="about"
+              onclick="location.href='../Home/index.html#about_section'"
+              >ABOUT</label
+            >
+          </div>
+        </div>
+      </nav>
+      <main>
+        <h1 class="logo-main hidden-vertical">404</h1>
+        <h2 class="page-title hidden-vertical">
+          The page you were looking for does not exist or still under
+          construction.
+        </h2>
+        <p class="page-text hidden-vertical">
+          We're no strangers to love You know the rules and so do I
+        </p>
+        <button
+          class="btn-show hidden-vertical"
+          onclick="location.href='../Home/index.html'"
+        >
+          Back to Home
+        </button>
+      </main>
+      <footer>
+        <h4 class="footer-title">Web Development for Dummies</h4>
+        <p class="footer-text">Where you can find your WebDev needs.</p>
+        <p class="footer-text">Made By : Dewa</p>
+        <a href="https://github.com/dwmd12" target="_blank">
+          <p class="footer-logo">GITHUB</p>
+        </a>
+      </footer>
+    </body>
+  </html>
+</html>
